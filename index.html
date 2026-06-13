@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            height : 100vh ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .container {
+            padding : 10px;
+            height : fit-content ;
+            width : 400px ;
+            display: flex;
+            flex-direction: column;
+            border : solid black 1px;
+            border-radius: 10px;
+            gap : 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        input{
+            width : 100%;
+            padding : 10px;
+            border : none;
+            border-bottom : solid black 1px;
+
+        }
+        input:focus {
+             
+            outline: none;
+        }
+        .for {
+            width : 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .btn-sign {
+            padding: 10px;
+            width : 100%;
+            background-color: blue;
+            text-align: center;
+            color : white ;
+        }
+        img {
+            width : 100px ; 
+            height : 100px ;
+            object-fit: cover;
+            border-radius: 50%;;
+        }
+        label {
+            display: flex;
+            width: 100%;
+            justify-content: flex-start;
+            font-weight: bold;
+        }
+        .label{
+            width : 100%;
+            padding : 10px;
+            border : none;
+            border-bottom : solid black 1px;
+        }
+        .phone-and-gender {
+            display: flex;
+            flex-direction: row;
+            gap :10px;
+            width : 100%;
+        }
+        .block {
+            
+             display: flex;
+             flex-direction: column;
+             flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <form class = "container">
+        <div>
+            <img src="image.png" alt="">
+        </div>
+        <label for="name">Email : </label>
+        <input type="name" class="name">
+        <label for="passord">Password : </label>
+        <input type="password" class="password">
+        <div class = "for">
+            <a href="#">Forgot Password</a>
+        </div>
+        <div class = "phone-and-gender">
+            <div class = "block">
+                <label for="#number"> Phone : </label>
+                <input type="number" min="0" id="number">
+
+            </div>
+            
+
+            <div  class="block">
+                <label for="select">Select : </label>
+                <select name="" id="select" class = "label">
+                    <option value="">Select...</option>
+                    <option value="female">female</option>
+                    <option value="male">male</option>
+                </select>
+            </div>
+            
+             
+        </div>
+        
+       
+            <button class = "btn-sign">Sign in</button>
+            <button class = "btn-sign" style="background : transparent; color : black ">Register</button>
+    </form>
+</body>
+</html>
